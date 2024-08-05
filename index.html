@@ -1,13 +1,24 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compataible" content="ie-edge">
-    <meta name="viewport" content="width=device-width",initial-scale=1.8>
-    <title>第一个网页</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>居中图片</title>
+  <style>
+    .container {
+      display: grid;
+      place-items: center;
+      height: 100vh; /* 设置容器高度 */
+    }
+    .container img {
+      max-width: 100%; /* 防止图片超出容器 */
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-    <h3>和屋和物</h3>
-    <img src="78911722849379_.pic_hd.jpg">
+  <div class="container">
+    <img src="78911722849379_.pic_hd.jpg" alt="Example Image">
+  </div>
 </body>
 </html>
